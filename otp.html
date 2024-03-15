@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send OTP</title>
+</head>
+<body>
+    <h1>Send OTP Email</h1>
+    <button id="sendEmailButton">Send OTP Email</button>
+
+    <script src="main.js"></script>
+<script>
+
+
+// Function to send OTP via email
+function sendOTP() {
+    const nodemailer = require('nodemailer');
+    const transporter = nodemailer.createTransport({
+        service: 'Gmail',
+        auth: {
+            user: 'booraraman2000@gmail.com',
+            pass: 'csya nwxa rlpv yksn'
+        }
+    });
+
+    const otp = generateOTP(6);
+
+    let mailOptions = {
+        from: 'booraraman2000@gmail.com',
+        to: 'booraraman2004@gmail.com', 
+        subject: 'OTP For Verification',          
+        text: 'The OTP For Verification Is ' + otp
+    };
+
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            return console.log(error);
+        }
+        console.log('Message sent: %s', info.messageId);
+    });
+}
+
+// Attach the sendOTP function to the button click event
+document.getElementById('sendEmailButton').addEventListener('click', sendOTP);
+
+</script>
+</body>
+</html>
