@@ -5,123 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EasyDrive Rentals | Services</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="Services.css"> -->
-    <style>
-        /* Add your custom styles here */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            color: #333;
-        }
-
-        .service-container {
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
-            margin-bottom: 20px; 
-        }
-
-        .service-details, .service {
-            text-align: left;
-            display: inline-block;
-            vertical-align: top;
-        }
-
-        .service-details {
-            width: 45%;
-            margin-right: 5%;
-            padding: 20px;
-        }
-
-        .service {
-            width: 45%;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            background-color: #fff;
-            transition: transform 0.3s ease;
-        }
-
-        .service:hover {
-            transform: translateY(-5px);
-        }
-
-        .service img {
-            max-width: 100%;
-            border-radius: 10px;
-            float: right;
-            margin-left: 20px;
-        }
-
-        .service h3 {
-            font-size: 24px;
-            margin-bottom: 20px;
-            color: #007bff;
-        }
-
-        .service p {
-            font-size: 18px;
-            margin-bottom: 20px;
-            color: #555; /* Adjusted text color */
-        }
-
-        .service button {
-            font-size: 18px;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-            color: #fff;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .service button:hover {
-            background-color: #0056b3;
-        }
-
-        nav {
-            background-color: #95f8ca;
-            color: #fff;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            list-style-type: none;
-        }
-
-        nav .main {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        nav button {
-            margin: 0 10px;
-            font-size: 16px;
-            background-color: transparent;
-            border: none;
-            color: #fff;
-            cursor: pointer;
-        }
-
-        nav .right {
-            margin-left: auto;
-        }
-
-        section {
-            padding: 40px;
-            text-align: center;
-        }
-
-        footer {
-            background-color: #343a40;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
+    <link rel="stylesheet" href="Services.css">
     </style>
 </head>
 <body>
@@ -141,7 +25,7 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="service-container"> <!-- Parent div for shadow effect -->
+                <div class="service-container">
                     <div class="service-details">
                         <h3>Got a Spare Vehicle Sitting Around? Earn Some Extra Cash!</h3>
                         <h4>Monetize Your Wheels:</h4>
@@ -152,27 +36,80 @@
                         <p>Worried about managing renters and logistics? Don't be! Our dedicated team handles all aspects of the rental process, leaving you free from the hassle of dealing with customers directly. Enjoy peace of mind knowing that we've got you covered every step of the way.</p>
                     </div>
                     <div class="service">
-                        <img src="./images/parked11.png" class="d-block" alt="Vehicle Registration">
-                        <h3>Monetize Your Spare Vehicles!</h3>
-                        <p>Do you have extra vehicles sitting idle? Register them with us and turn them into a source of income!</p>
-                        <button>Register Now</button>
+                        <div id="carouselRegister" class="carousel slide" data-ride="carousel" data-interval="2000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/parked11.png" class="d-block w-100" alt="Vehicle Registration">
+                                    <div class="carousel-caption">
+                                        <h3>Monetize Your Spare Vehicles!</h3>
+                                        <p>Do you have extra vehicles sitting idle? Register them with us and turn them into a source of income!</p>
+                                        <button>Register Now</button>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/parked22.png" class="d-block w-100" alt="Other Image 1">
+                                    <div class="carousel-caption">
+                                        <h3>Monetize Your Idle Cars!</h3>
+                                        <p>Turn your idle cars into a source of income by registering them with us!</p>
+                                        <button>Register Now</button>
+                                    
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/parked33.png" class="d-block w-100" alt="Other Image 2">
+                                    <div class="carousel-caption">
+                                        <h3>Earn Money with Unused Vehicles!</h3>
+                                        <p>Register your unused vehicles with us and start earning money!</p>
+                                        <button>Register Now</button>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="service-container"> <!-- Parent div for shadow effect -->
+                <div class="service-container">
                     <div class="service-details">
-                        <h3>Need a Ride? We've Got You Covered!</h3>
-                        <h4>Choose Your Dream Ride:</h4>
-                        <p>At EasyDrive Rentals, we offer a diverse range of vehicles to cater to your every need. From compact cars perfect for city exploration to spacious vans ideal for family getaways, we have it all. Our extensive fleet is meticulously maintained, ensuring you a safe and comfortable journey every time.</p>
+                        <h3>Convenient Vehicle Rentals for Every Occasion</h3>
+                        <h4>Explore Our Rental Options:</h4>
+                        <p>At EasyDrive Rentals, we offer a wide range of vehicles to suit your needs. Whether you need a car for a weekend getaway, a truck for moving day, or a scooter for zipping around town, we've got you covered. With flexible rental terms and competitive rates, finding the perfect vehicle has never been easier.</p>
                         <h4>Easy Booking Process:</h4>
-                        <p>Booking a vehicle with EasyDrive Rentals couldn't be simpler. Our user-friendly website allows you to browse through our selection, select the vehicle that suits your requirements, and make a reservation with just a few clicks. No more lengthy paperwork or phone calls - it's convenience at your fingertips!</p>
-                        <h4>Affordable Pricing:</h4>
-                        <p>We believe that everyone should have access to affordable transportation options. That's why we offer competitive pricing and flexible rental plans to accommodate any budget. With EasyDrive Rentals, you can hit the road without worrying about breaking the bank.</p>
+                        <p>Booking a vehicle with EasyDrive Rentals is a breeze. Simply browse our selection, choose the vehicle that fits your requirements, select your rental dates, and make your reservation. It's that simple! Plus, with our secure payment system and transparent policies, you can book with confidence every time.</p>
+                        <h4>Reliable Customer Support:</h4>
+                        <p>Need assistance during your rental? Our friendly customer support team is here to help. Whether you have questions about your reservation, need roadside assistance, or want to extend your rental period, we're just a phone call away. Count on us for reliable support whenever you need it.</p>
                     </div>
                     <div class="service">
-                        <img src="./images/rent11.png" class="d-block" alt="Car Rental">
-                        <h3>Find Your Ideal Vehicle!</h3>
-                        <p>Planning a trip? Explore our diverse range of vehicles available for rent and find the perfect one for your journey!</p>
-                        <button>Rent Now</button>
+                        <div id="carouselRent" class="carousel slide" data-ride="carousel" data-interval="2000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/rent11.png" class="d-block w-100" alt="Rent a Vehicle">
+                                    <div class="carousel-caption">
+                                        <h3>Find the Perfect Rental</h3>
+                                        <p>Explore our diverse fleet of vehicles and find the perfect rental for your needs!</p>
+                                        <button>Register Now</button>
+                                    
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/rent22.png" class="d-block w-100" alt="Rent a Vehicle">
+                                    <div class="carousel-caption">
+                                        <h3>Book with Ease</h3>
+                                        <p>Booking a vehicle with EasyDrive Rentals is quick, easy, and hassle-free!</p>
+                                        <button>Register Now</button>
+                                    
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/rent33.png" class="d-block w-100" alt="Rent a Vehicle">
+                                    <div class="carousel-caption">
+                                        <h3>Enjoy Your Rental</h3>
+                                        <p>Hit the road and enjoy your rental experience with EasyDrive Rentals!</p>
+                                        <button>Register Now</button>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -182,8 +119,7 @@
     <footer>
         <p>&copy; 2024 Rental Services. All rights reserved.</p>
     </footer>
-
-    <!-- Bootstrap JS -->
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
 </body>
