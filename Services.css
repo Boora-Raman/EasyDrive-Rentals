@@ -7,33 +7,67 @@ body {
 }
 
 .service-container {
-<<<<<<< HEAD
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    margin-bottom: 20px; /* Add some margin for spacing */
-=======
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
     margin-bottom: 20px; 
->>>>>>> a6744ed (latest EasyDrive)
 }
-.service-details {
-    text-align: left;
-    margin-top: 6%;
-    display: inline-block;
-    vertical-align: top;
-    width: 45%; /* Adjust the width as needed */
-    margin-right: 5%; /* Adjust the spacing between divs */
-}
-.service {
-<<<<<<< HEAD
-    display: inline-block;
-    vertical-align: top;
-    width: 45%; /* Adjust the width as needed */
-=======
 
->>>>>>> a6744ed (latest EasyDrive)
+.service-details, .service {
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
 }
+
+.service-details {
+    width: 45%;
+    margin-right: 5%;
+    padding: 20px;
+}
+
+.service {
+    width: 45%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
 .service img {
     max-width: 100%;
+    border-radius: 10px;
+    float: right;
+    margin-left: 20px;
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.service p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555; /* Adjusted text color */
+}
+
+.service button {
+    font-size: 18px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.service button:hover {
+    background-color: #0056b3;
 }
 
 nav {
@@ -67,58 +101,6 @@ nav .right {
 section {
     padding: 40px;
     text-align: center;
-}
-
-.service {
-<<<<<<< HEAD
-    margin-top: 25px;
-=======
-    display: inline-block;
-    vertical-align: top;
-    width: 45%; /* Adjust the width as needed */
-    margin-top: 65px;
->>>>>>> a6744ed (latest EasyDrive)
-    margin-bottom:10px;
-    border-radius: 35px;
-    padding: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.service:hover {
-    transform: translateY(-5px);
-}
-
-.service img {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.service h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #007bff;
-}
-
-.service p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.service button {
-    font-size: 18px;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.service button:hover {
-    background-color: #0056b3;
 }
 
 footer {

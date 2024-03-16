@@ -2,12 +2,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-}
-
-nav {
-    background-color: #333;
-=======
     background-color: #f8f9fa;
     color: #333;
 }
@@ -16,135 +10,25 @@ nav {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
     margin-bottom: 20px; 
 }
-.service-details {
+
+.service-details, .service {
     text-align: left;
-    margin-top: 6%;
     display: inline-block;
     vertical-align: top;
-    width: 45%; /* Adjust the width as needed */
-    margin-right: 5%; /* Adjust the spacing between divs */
-}
-.service {
-    display: inline-block;
-    vertical-align: top;
-    width: 45%; /* Adjust the width as needed */
-}
-.service img {
-    max-width: 100%;
 }
 
-nav {
-    background-color: #95f8ca;
->>>>>>> a6744ed (latest EasyDrive)
-    color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-<<<<<<< HEAD
-}
-
-.icon-title {
-    display: flex;
-    align-items: center;
-}
-
-button {
-=======
-    list-style-type: none;
-}
-
-nav .main {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-nav button {
-    margin: 0 10px;
-    font-size: 16px;
->>>>>>> a6744ed (latest EasyDrive)
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-<<<<<<< HEAD
-    margin-left: 20px;
-    font-size: 16px;
-}
-
-button.main {
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.right button {
-    margin-left: 0;
-}
-
-.about-section {
-    padding: 50px 20px;
-}
-
-.container {
-    max-width: 1200px;
-    margin: auto;
-}
-
-h2, h3 {
-    color: #333;
-}
-
-h3 {
-    margin-top: 30px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer p {
-    margin: 0;
-}
-
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.content {
-    flex-basis: 70%;
-}
-
-.image {
-    flex-basis: 25%;
-}
-
-.image img {
-    max-width: 100%;
-    height: auto;
-=======
-}
-
-nav .right {
-    margin-left: auto;
-}
-
-section {
-    padding: 40px;
-    text-align: center;
+.service-details {
+    width: 45%;
+    margin-right: 5%;
+    padding: 20px;
 }
 
 .service {
-    margin-top: 25px;
-    margin-bottom:10px;
-    border-radius: 35px;
-    padding: 15px;
+    width: 45%;
+    padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
     transition: transform 0.3s ease;
 }
 
@@ -155,7 +39,8 @@ section {
 .service img {
     max-width: 100%;
     border-radius: 10px;
-    margin-bottom: 20px;
+    float: right;
+    margin-left: 20px;
 }
 
 .service h3 {
@@ -167,6 +52,7 @@ section {
 .service p {
     font-size: 18px;
     margin-bottom: 20px;
+    color: #555; /* Adjusted text color */
 }
 
 .service button {
@@ -184,6 +70,39 @@ section {
     background-color: #0056b3;
 }
 
+nav {
+    background-color: #95f8ca;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav .main {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav button {
+    margin: 0 10px;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav .right {
+    margin-left: auto;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
 footer {
     background-color: #343a40;
     color: #fff;
@@ -192,5 +111,4 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
->>>>>>> a6744ed (latest EasyDrive)
 }
