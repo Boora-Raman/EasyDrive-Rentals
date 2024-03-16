@@ -2,15 +2,46 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
 }
 
 nav {
     background-color: #333;
+=======
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.service-container {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px; 
+}
+.service-details {
+    text-align: left;
+    margin-top: 6%;
+    display: inline-block;
+    vertical-align: top;
+    width: 45%; /* Adjust the width as needed */
+    margin-right: 5%; /* Adjust the spacing between divs */
+}
+.service {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%; /* Adjust the width as needed */
+}
+.service img {
+    max-width: 100%;
+}
+
+nav {
+    background-color: #95f8ca;
+>>>>>>> a6744ed (latest EasyDrive)
     color: #fff;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
 }
 
 .icon-title {
@@ -19,10 +50,24 @@ nav {
 }
 
 button {
+=======
+    list-style-type: none;
+}
+
+nav .main {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav button {
+    margin: 0 10px;
+    font-size: 16px;
+>>>>>>> a6744ed (latest EasyDrive)
     background-color: transparent;
     border: none;
     color: #fff;
     cursor: pointer;
+<<<<<<< HEAD
     margin-left: 20px;
     font-size: 16px;
 }
@@ -82,4 +127,70 @@ footer p {
 .image img {
     max-width: 100%;
     height: auto;
+=======
+}
+
+nav .right {
+    margin-left: auto;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+.service {
+    margin-top: 25px;
+    margin-bottom:10px;
+    border-radius: 35px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.service p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.service button {
+    font-size: 18px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.service button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+>>>>>>> a6744ed (latest EasyDrive)
 }
