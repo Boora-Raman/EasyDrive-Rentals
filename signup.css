@@ -61,16 +61,17 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    width: 600px;
     margin: 20px; /* Adjusted margin */
     padding: 20px;
+    display: flex;
+    justify-content: center;
     background-color: #f3cf9c; /* Changed background-color */
     border-radius: 15px; /* Added border-radius */
+
 }
 
-.container form {
-    width: 100%;
-}
+
 
 .container label, .container input, .container button, .container span {
     display: block;
