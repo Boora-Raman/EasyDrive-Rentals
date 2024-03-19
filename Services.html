@@ -5,112 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EasyDrive Rentals | Services</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Services.css">
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Services.css">
+    <style>
+</style>
 </head>
 <body>
     <nav>
-        <div class="icon-title">
-            <button class="main"> <a href="./index.html"> EasyDrive Rentals </a> </button>
-            <span>Renting Made Easy</span>
+        <div class="navbar-left">
+            <button class="toggle-nav" onclick="toggleSidebar()"><i class="bi bi-list"></i></button>
+            <a href="./index.html" class="navbar-brand">EasyDrive Rentals</a>
         </div>
-        <ul class="right">
-            <button> <a href="./Services.html"> Services </a> </button>
-            <button><a href="./Register.html"> Register A Vehicle  </a> </button>
-            <button> <a href="./Rent.html"> Rent A Vehicle </a> </button>
-            <button><a href="./login.html"> Log In </a> </button>
-        </ul>
+        <div class="navbar-search">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="navbar-profile">
+            <a class="sidebar-link" href="./login.html"><i class="bi bi-person"></i> Log In</a>
+        </div>
     </nav>
 
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="service-container">
-                    <div class="service-details">
-                        <h3>Got a Spare Vehicle Sitting Around? Earn Some Extra Cash!</h3>
-                        <h4>Monetize Your Wheels:</h4>
-                        <p>Have an unused vehicle taking up space in your garage? Turn it into a money-making asset with EasyDrive Rentals! Whether it's a car, motorcycle, or bicycle, we'll help you rent it out to others through our platform. It's a hassle-free way to earn some extra income with minimal effort.</p>
-                        <h4>Simple Registration Process:</h4>
-                        <p>Getting started with EasyDrive Rentals is a breeze. Just sign up, register your vehicle, and set your rental rates. We'll take care of the rest, handling everything from marketing and bookings to payments. Sit back, relax, and watch the earnings roll in!</p>
-                        <h4>Stress-Free Rentals:</h4>
-                        <p>Worried about managing renters and logistics? Don't be! Our dedicated team handles all aspects of the rental process, leaving you free from the hassle of dealing with customers directly. Enjoy peace of mind knowing that we've got you covered every step of the way.</p>
-                    </div>
-                    <div class="service">
-                        <div id="carouselRegister" class="carousel slide" data-ride="carousel" data-interval="2000">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./images/parked22.png" class="d-block w-100" alt="Vehicle Registration">
-                                    <div class="carousel-caption">
-                                        <h3>Monetize Your Spare Vehicles!</h3>
-                                        <p>Do you have extra vehicles sitting idle? Register them with us and turn them into a source of income!</p>
-                                        <button>Register Now</button>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./images/parked11.png" class="d-block w-100" alt="Other Image 1">
-                                    <div class="carousel-caption">
-                                        <h3>Monetize Your Idle Cars!</h3>
-                                        <p>Turn your idle cars into a source of income by registering them with us!</p>
-                                        <button>Register Now</button>
-                                    
-                                    </div>
-                                </div>
-                              </div>
+    <div class="sidebar" id="sidebar">
+        <a class="sidebar-link" href="./Services.html"><i class="bi bi-list-check"></i> Services</a>
+        <a class="sidebar-link" href="./Register.html"><i class="bi bi-clipboard-plus"></i> Register A Vehicle</a>
+       
+        <a class="sidebar-link" href="./Rent.html"><i class="bi bi-truck"></i> Rent A Vehicle</a>
+    </div>
+
+    <div class="container">
+        <div class="service-container">
+            <div class="service-details">
+                <h2>Vehicle Registration</h2>
+                <p>Register your vehicle with EasyDrive Rentals and start earning money by renting it out.</p>
+                <p>Our registration process is simple and hassle-free. Get started now!</p>
+                <a href="./Register.html" class="btn btn-primary">Register</a>
+            </div>
+            <div class="service">
+                <div id="carouselRegister" class="carousel slide service-carousel" data-ride="carousel" data-interval="2000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/parked22.png" class="d-block w-100" alt="Vehicle Registration">
                         </div>
-                    </div>
-                </div>
-                <div class="service-container">
-                    <div class="service-details">
-                        <h3>Convenient Vehicle Rentals for Every Occasion</h3>
-                        <h4>Explore Our Rental Options:</h4>
-                        <p>At EasyDrive Rentals, we offer a wide range of vehicles to suit your needs. Whether you need a car for a weekend getaway, a truck for moving day, or a scooter for zipping around town, we've got you covered. With flexible rental terms and competitive rates, finding the perfect vehicle has never been easier.</p>
-                        <h4>Easy Booking Process:</h4>
-                        <p>Booking a vehicle with EasyDrive Rentals is a breeze. Simply browse our selection, choose the vehicle that fits your requirements, select your rental dates, and make your reservation. It's that simple! Plus, with our secure payment system and transparent policies, you can book with confidence every time.</p>
-                        <h4>Reliable Customer Support:</h4>
-                        <p>Need assistance during your rental? Our friendly customer support team is here to help. Whether you have questions about your reservation, need roadside assistance, or want to extend your rental period, we're just a phone call away. Count on us for reliable support whenever you need it.</p>
-                    </div>
-                    <div class="service">
-                        <div id="carouselRent" class="carousel slide" data-ride="carousel" data-interval="2000">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./images/rent11.png" class="d-block w-100" alt="Rent a Vehicle">
-                                    <div class="carousel-caption">
-                                        <h3>Find the Perfect Rental</h3>
-                                        <p>Explore our diverse fleet of vehicles and find the perfect rental for your needs!</p>
-                                        <button>Rent A Vehicle</button>
-                                    
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./images/rent22.png" class="d-block w-100" alt="Rent a Vehicle">
-                                    <div class="carousel-caption">
-                                        <h3>Book with Ease</h3>
-                                        <p>Booking a vehicle with EasyDrive Rentals is quick, easy, and hassle-free!</p>
-                                        <button>Rent A Vehicle</button>
-                                    
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./images/rent33.png" class="d-block w-100" alt="Rent a Vehicle">
-                                    <div class="carousel-caption">
-                                        <h3>Enjoy Your Rental</h3>
-                                        <p>Hit the road and enjoy your rental experience with EasyDrive Rentals!</p>
-                                        <button>Rent A Vehicle</button>
-                                    
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="carousel-item">
+                            <img src="./images/parked11.png" class="d-block w-100" alt="Other Image 1">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="service-container">
+            <div class="service-details">
+                <h2>Rent A Vehicle</h2>
+                <p>Rent a vehicle from EasyDrive Rentals and enjoy a seamless experience with our reliable fleet.</p>
+                <p>Choose from a variety of vehicles and pick the one that suits your needs best. Book now!</p>
+                <a href="./Rent.html" class="btn btn-primary">Rent A Vehicle</a>
+            </div>
+
+            <div class="service">
+                <div id="carouselRent" class="carousel slide service-carousel" data-ride="carousel" data-interval="2000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/rent11.png" class="d-block w-100" alt="Rent a Vehicle">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/rent22.png" class="d-block w-100" alt="Rent a Vehicle">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/rent33.png" class="d-block w-100" alt="Rent a Vehicle">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
-        <p>&copy; 2024 Rental Services. All rights reserved.</p>
+        <p>&copy; 2024 EasyDrive Rentals. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
     </footer>
-    
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
 </body>

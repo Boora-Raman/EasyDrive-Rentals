@@ -3,36 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EasyDrive Rentals | Log In </title>
-    <link rel="stylesheet" href="./login.css">
+    <title>EasyDrive Rentals | About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="new22.css">
 </head>
 <body>
-    <div class="nav">
-        <div class="icon-title">
-            <img src="./" alt="">
-            <button class="main"> <a href="./index.html"> EasyDrive Rentals </a> </button>
-            <span>Renting Made Easy</span>
+    <nav>
+        <div class="navbar-left">
+            <button class="toggle-nav" onclick="toggleSidebar()">
+                <i class="bi bi-list"></i>
+            </button>
+            <a href="./index.html" class="navbar-brand">EasyDrive Rentals</a>
         </div>
-        <ul class="right">
-            <li><button onclick="location.href='./Services.html'">Services</button></li>
-            <li><button onclick="location.href='./Register.html'">Register A Vehicle</button></li>
-            <li><button onclick="location.href='./Rent.html'">Rent A Vehicle</button></li>
-            <li><button onclick="location.href='./login.html'">Log In</button></li>
-        </ul>
+        <div class="navbar-search">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="navbar-profile">
+
+            <a class="sidebar-link" href="./login.html">
+                <i class="bi bi-person"></i>
+                Log In</a>
+        </div>
+    </nav>
+
+    <div class="sidebar" id="sidebar">
+        <a class="sidebar-link" href="./Services.html">
+            <i class="bi bi-list-check"></i>
+            Services</a>
+        <a class="sidebar-link" href="./Register.html">
+            <i class="bi bi-clipboard-plus"></i>
+            Register A Vehicle</a>
+        <a class="sidebar-link" href="./Rent.html">
+            <i class="bi bi-truck"></i>
+            Rent A Vehicle</a>
+
     </div>
-    <h1 class="login-text">Log In</h1>
+
+
+    <h1 class="login-text">Sign Up</h1>
     <div class="container">
         <form class="loginform" action="./signup.html">
+            <label for="FName">First Name:</label>
+            <input type="text" placeholder="Ram" name="FName" required>
+
+            <label for="Lname">Last Name:</label>
+            <input type="text" id="Lname" placeholder="Kumar" name="Lname" required>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="kumarRam@123" name="username" required>
+
+            <label for="GovId">Aadhar Number:</label>
+            <input type="text" placeholder="1122 3322 2211" name="Govid" required>
+
             <label for="email">Email:</label>
             <input type="email" id="email" placeholder="abc@gmail.com" name="email" required>
-           
+
             <label for="password">Password:</label>
-            <input type="password"  placeholder="Enter Your Password" name="password" required>
-           
-            <button type="submit">Log In</button>
-        
-            <button onclick="location.href='./signup.html'">Sign Up</button>
+            <input type="password" placeholder="Enter Your Password" name="password" required>
+
+            <button type="submit">Submit</button>
         </form>
     </div>
+
+
+    <footer>
+        <p>&copy; 2024 Rental Services. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
