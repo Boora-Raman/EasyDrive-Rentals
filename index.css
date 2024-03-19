@@ -65,7 +65,7 @@ nav {
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    display: none;
+    display: hidden;
 }
 
 .navbar-profile a {
