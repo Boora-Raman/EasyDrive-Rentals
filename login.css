@@ -1,204 +1,103 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #444;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #f8f9fa; /* Added background color */
 }
 
-a
-{
+.navbar {
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    margin-right: auto;
+    color: #fff;
     text-decoration: none;
-
 }
 
-nav {
-    background-color: #0056b3;
+.navbar-brand:hover {
     color: #fff;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-decoration: none;
 }
 
-.navbar-left {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-left button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #fff;
-    margin-right: 10px;
-}
-
-.navbar-left .navbar-brand {
-    font-size: 20px;
-    font-weight: bold;
+.navbar a.navbar-link {
     color: #fff;
     text-decoration: none;
     margin-right: 20px;
+    font-weight: bold;
 }
 
-.navbar-search {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.navbar-search input[type="text"] {
-    width: 100%;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    display: none;
-}
-
-.navbar-profile a {
-    color: #fff;
-    margin: 0 10px;
-
-}
-
-.navbar-profile button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #fff;
-    margin-left: 10px;
-}
-
-.sidebar {
-    background-color: #0056b3;
-    color: #fff;
-    padding: 20px;
-    height: calc(100vh - 80px);
-    width: 250px;
-    position: fixed;
-    top: 80px;
-    left: -250px;
-    transition: left 0.3s ease;
-    z-index: 9;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.sidebar.active {
-    left: 0;
-}
-
-.sidebar .sidebar-link {
-    color: #fff;
+.navbar a.navbar-link:hover {
+    color: #f8f9fa;
     text-decoration: none;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
 }
 
-.sidebar .sidebar-link i {
-    margin-right: 10px;
-    font-size: 1.2rem;
+.navbar .bi {
+    margin-right: 5px;
+    font-size: 20px;
 }
 
-.sidebar .sidebar-link:hover {
-    opacity: 0.8;
-}
-
-.login-text {
-    text-align: center;
-    margin-top: 80px;
-}
-
-.container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.loginform {
+.form-container {
     background-color: #fff;
-    border-radius: 5px;
-    padding: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: auto; /* Centering the form */
+    margin-top: 50px; /* Adjusting top margin */
 }
 
-.loginform label {
-    display: block;
-    margin-bottom: 15px; /* Increased margin between labels */
+.form-container h1 {
+    margin-bottom: 30px;
+    color: #007bff; /* Changed heading color */
 }
 
-.loginform input[type="text"],
-.loginform input[type="email"],
-.loginform input[type="password"] {
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-
-
-footer {
-    background-color: #343a40;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    left: 0;
-    z-index: 10;
-}
-
-footer p {
-    margin: 0;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.navbar-subtitle {
-    font-size: 12px;
-    color: #ccc;
-    margin-top: -5px;
-}
-.login-text {
-    text-align: center;
-    margin-top: 80px;
-}
-
-.container a 
-{
-    width: 100%;
-}
-
-.loginform button[type="submit"] {
-    width: 100%;
-    margin: 15px 02px;
     padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    background-color: #007bff;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    padding: 10px 20px;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
-.loginform button[type="submit"]:hover {
+.navbar .fas {
+    margin-right: 5px;
+    font-size: 20px;
+}
+.btn-primary:hover {
     background-color: #0056b3;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.redirect-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.redirect-link:hover {
+    text-decoration: underline;
 }
