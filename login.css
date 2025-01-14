@@ -101,3 +101,16 @@ body {
 .redirect-link:hover {
     text-decoration: underline;
 }
+
+.navbar-brand, .nav-link {
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
