@@ -12,7 +12,7 @@ body {
 
 /* Navbar */
 .navbar {
-  background-color: aliceblue;
+  background-color: #007bff;
 }
 
 .navbar-brand, .nav-link {
@@ -27,6 +27,12 @@ body {
 .navbar-toggler:focus {
   outline: none;
 }
+
+.nav-link
+{
+  color: aqua;
+}
+
 
 /* Button Styles */
 .btn-primary {
